@@ -1,0 +1,41 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 350px;
+  width: 100%;
+}
+
+.form__input {
+  background: #1e242c;
+  border: 0;
+  box-sizing: border-box;
+  color: #fff;
+  display: block;
+  font-size: 12pt;
+  margin-bottom: 3px;
+  outline: none;
+  padding: 10px 15px;
+}
+
+.form__input-message {
+  margin-bottom: 5px;
+  min-height: 150px;
+}
+
+.btn__container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn__form {
+  border: 2px solid #fff;
+  cursor: pointer;
+  background: transparent;
+  margin: 10px 0 130px;
+  width: 40%;
+  height: 45px;
+  color: #fff;
+  font-size: 15px;
+}

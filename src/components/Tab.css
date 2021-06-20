@@ -1,0 +1,20 @@
+.tab {
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 400;
+  padding: 0 20px;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+.tab--active {
+  color: #fff;
+  background: #e31b6d;
+  padding: 5px 10px;
+}
+
+@media (max-width: 576px) {
+  .tab {
+    font-size: 20px;
+  }
+}

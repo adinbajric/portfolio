@@ -1,0 +1,74 @@
+.home {
+  background-image: url("../assets/filler.png");
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+}
+
+.text-typing {
+  padding: 20px 30px;
+  color: #fff;
+  font-size: 35px;
+  border-radius: 50px;
+}
+.text-typing p {
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(22, end) forwards, blink 1s;
+}
+
+.text-typing p span {
+  color: #e31b6d;
+}
+
+.btn {
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-size: 13pt;
+  padding: 10px 20px;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.btn:hover {
+  border-color: #04c2c9;
+  background: #04c2c9;
+}
+
+.fa-arrow-right {
+  margin-left: 10px;
+  transition: all 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.btn:hover .fa-arrow-right {
+  transform: rotate(90deg);
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-right: 2px solid #222;
+  }
+}
+@media (max-width: 576px) {
+  .text-typing {
+    padding: 20px 15px;
+    font-size: 25px;
+  }
+}
