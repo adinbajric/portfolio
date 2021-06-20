@@ -17,8 +17,6 @@ const Navbar = () => {
   };
 
   window.addEventListener("scroll", changeNavColor);
-
-  window.addEventListener("scroll", changeNavColor);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const scrollToTop = () => {
