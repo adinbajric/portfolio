@@ -19,9 +19,6 @@ const Navbar = () => {
   window.addEventListener("scroll", changeNavColor);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
 
   return (
     <nav className={colorChange ? "navbar navbar-nottransparent" : "navbar"}>

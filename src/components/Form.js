@@ -1,13 +1,18 @@
 import React from "react";
 import "./Form.css";
 import emailjs from "emailjs-com";
-import apiKeys from "../emailkey.js";
 
 function Form() {
+  console.log(process.env);
   const onSubmit = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm("gmail", apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
+      .sendForm(
+        "gmail",
+        `${process.env.REACT_APP_TEMPLATE_ID}`,
+        e.target,
+        `${process.env.REACT_APP_USER_ID}`
+      )
       .then(
         (result) => {
           alert("Message Sent, I'll get back to you shortly", result.text);
