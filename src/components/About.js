@@ -10,16 +10,14 @@ function About() {
         <div className="about__text">
           <p className="text__html">{`<html>`}</p>
           <p className="text__html text__html--body">{`<body>`}</p>
-          <p className="text__html text__margin">
+          <div className="text__html text__margin">
             {`<h2>`}
-
             <div className="text__html--h2" data-aos="fade-left">
               Who's this guy?
             </div>
-
             {`<h2/>`}
-          </p>
-          <p className="text__html text__margin">
+          </div>
+          <div className="text__html text__margin">
             {`<p>`}
             <br />
             <div
@@ -39,10 +37,9 @@ function About() {
             </div>
             <br />
             {`<p/>`}
-          </p>
-          <p className="text__html text__margin">
+          </div>
+          <div className="text__html text__margin">
             {`<button>`}
-
             <div className="cv__container">
               <button
                 className="btn__cv"
@@ -58,13 +55,11 @@ function About() {
                 </a>
               </button>
             </div>
-
             {`<button/>`}
-          </p>
+          </div>
           <p className="text__html text__html--body">{`<body/>`}</p>
           <p className="text__html">{`<html/>`}</p>
         </div>
-
         <div className="hero" data-aos="flip-left">
           <img src={hero} alt="hero" />
         </div>

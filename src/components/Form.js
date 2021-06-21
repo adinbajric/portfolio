@@ -3,7 +3,6 @@ import "./Form.css";
 import emailjs from "emailjs-com";
 
 function Form() {
-  console.log(process.env);
   const onSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -29,6 +28,7 @@ function Form() {
       <input
         name="name"
         type="text "
+        required
         placeholder="Name"
         className="form__input"
         data-aos="fade-up"
@@ -36,6 +36,7 @@ function Form() {
       <input
         name="email"
         type="email"
+        required
         placeholder="Enter email"
         className="form__input"
         data-aos="fade-up"
@@ -44,6 +45,7 @@ function Form() {
       <textarea
         name="message"
         type="text"
+        required
         placeholder="Your Message"
         className="form__input form__input-message"
         data-aos="fade-up"
