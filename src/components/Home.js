@@ -12,7 +12,7 @@ function Home() {
       </div>
       <Link
         className="btn btn__home"
-        to="projects"
+        to="about"
         spy={true}
         smooth={true}
         offset={-70}

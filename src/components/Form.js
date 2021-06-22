@@ -2,7 +2,7 @@ import React from "react";
 import "./Form.css";
 import emailjs from "emailjs-com";
 
-function Form() {
+function Form({ notify }) {
   const onSubmit = (e) => {
     e.preventDefault();
     emailjs
@@ -18,6 +18,7 @@ function Form() {
         },
         (error) => {
           alert("An error occured, Plese try again", error.text);
+          notify();
         }
       );
     e.target.reset();
