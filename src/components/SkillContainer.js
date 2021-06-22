@@ -3,7 +3,7 @@ import "./SkillContainer.css";
 
 function SkillContainer({ item }) {
   return (
-    <div className="skillContainer">
+    <div className="skillContainer" data-aos="zoom-in">
       {item.map((i) => {
         return (
           <div className="skills__card">
