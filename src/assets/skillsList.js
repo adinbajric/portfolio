@@ -10,108 +10,57 @@ import github from "./github.png";
 import figma from "./figma.png";
 import photoshop from "./photoshop.png";
 
-let skillsList = [
+export let skillsList = [
   [
-    {
-      name: "JSX",
-      img: react,
-      type: "HTML",
-    },
     {
       name: "HTML",
       img: html5,
-      type: "HTML",
+    },
+    {
+      name: "JSX",
+      img: react,
     },
   ],
   [
     {
-      name: "css3",
+      name: "CSS3",
       img: css3,
-      type: CSS,
     },
     {
       name: "sass",
       img: sass,
-      type: CSS,
     },
     {
       name: "bootstrap",
       img: bootstrap,
-      type: CSS,
     },
     {
       name: "materialize",
       img: materialize,
-      type: CSS,
+    },
+  ],
+  [
+    {
+      name: "javascript",
+      img: javascript,
+    },
+    {
+      name: "jquery",
+      img: jquery,
+    },
+  ],
+  [
+    {
+      name: "github",
+      img: github,
+    },
+    {
+      name: "figma",
+      img: figma,
+    },
+    {
+      name: "photoshop",
+      img: photoshop,
     },
   ],
 ];
-
-let htmlSkills = [
-  {
-    name: "JSX",
-    img: react,
-    type: "HTML",
-  },
-  {
-    name: "HTML",
-    img: html5,
-    type: "HTML",
-  },
-];
-
-let cssSkills = [
-  {
-    name: "css3",
-    img: css3,
-  },
-  {
-    name: "sass",
-    img: sass,
-  },
-  {
-    name: "bootstrap",
-    img: bootstrap,
-  },
-  {
-    name: "materialize",
-    img: materialize,
-  },
-];
-
-/* let javascripList = [
-    {
-
-    }
-]
-  
- 
-  {
-    name: "javascript",
-    img: javascript,
-    
-  },
-  {
-    name: "jquery",
-    img: jquery,
-    
-  },
-  
-  {
-    name: "github",
-    img: github,
-    
-  },
-  {
-    name: "figma",
-    img: figma,
-
-  },
-  {
-    name: "photoshop",
-    img: photoshop,
-    
-  },
-]; */
-
-export { htmlSkills, cssSkills, skillsList };

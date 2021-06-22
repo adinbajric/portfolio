@@ -1,0 +1,41 @@
+.skills {
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url("../assets/skills.jpg");
+}
+
+.skillContainer {
+  width: 50%;
+  background: rgb(219, 215, 215);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+.skills__card {
+  margin: 0 15px 10px 15px;
+}
+
+.skill__card--img {
+  width: 90px;
+  height: 100px;
+}
+
+.skill__card--img img {
+  width: 100%;
+  height: auto;
+}
+
+.skill__card--title {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .skillContainer {
+    width: 75%;
+    justify-content: center;
+  }
+}
