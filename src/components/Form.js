@@ -2,12 +2,12 @@ import React from "react";
 import "./Form.css";
 import emailjs from "emailjs-com";
 
-function Form({ notify }) {
+function Form() {
   const onSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "gmail",
+        "service_nlvrtfd",
         `${process.env.REACT_APP_TEMPLATE_ID}`,
         e.target,
         `${process.env.REACT_APP_USER_ID}`
@@ -18,7 +18,6 @@ function Form({ notify }) {
         },
         (error) => {
           alert("An error occured, Plese try again", error.text);
-          notify();
         }
       );
     e.target.reset();
