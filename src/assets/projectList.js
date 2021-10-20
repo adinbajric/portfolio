@@ -29,7 +29,7 @@ let projectsList = [
   {
     name: "Charity - landing page",
     type: "React JS",
-    sort: "react",
+    sort: "javascript",
     img: pic5,
     gitUrl: "https://github.com/adinbajric/charity-landing-",
     netUrl: "https://charity-landing.netlify.app/",
