@@ -55,8 +55,8 @@ let projectsList = [
     type: "React JS",
     sort: "react",
     img: pic6,
-    gitUrl: "https://github.com/adinbajric/cart-react",
-    netUrl: "https://react-cart-cellphones.netlify.app/",
+    gitUrl: "https://github.com/adinbajric/redux-store",
+    netUrl: "https://redux-store1.netlify.app/",
   },
   {
     name: "Movie Database",
